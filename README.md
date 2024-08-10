@@ -1,1 +1,2 @@
-# Learning-Bootstrap-5
+# Description
+Repository created with the purpose of learning more about Bootstrap 5 technologies.
