@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- In Bootstrap 5 GridLayout, one Row has 12 Columns (col-{1,12}). -->
+    
+    <div class="container-lg">
+        <h2>Same size columns</h2>
+        <div class="row">
+            <div class="col">
+                <div class="p-2 bg-primary text-nowrap">col 1</div>
+            </div>
+            <div class="col">
+                <div class="p-2 bg-primary text-nowrap">col 2</div>
+            </div>
+            <div class="col">
+                <div class="p-2 bg-primary text-nowrap">col 3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg">
+        <h2>Different sizes columns</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="p-2 bg-primary">col 1</div>
+            </div>
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 2</div>
+            </div>
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        If you use a breakpoint col class (ex: col-sm-{1,12}) and don't use a class `col/col-{1,12}`,
+        the default behavior of the items when the viewport reaches out of the breakpoint (sm in this example)
+        is to occupy all 12 columns.  
+    -->
+    <div class="container-lg">
+        <h2>
+            <span class="fw-bold text-uppercase">sm</span> and <span class="fw-bold text-uppercase">md</span> breakpoints
+        </h2>
+        <div class="row">
+            <div class="col-sm-4 col-md-6">
+                <div class="p-2 bg-primary">col 1</div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="p-2 bg-primary">col 2</div>
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <div class="p-2 bg-primary">col 3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg">
+        <h2>
+            <span class="fw-bold text-uppercase">sm</span> and <span class="fw-bold text-uppercase">md</span> breakpoints (with col-{1,12})
+        </h2>
+        <div class="row">
+            <div class="col-sm-4 col-md-6 col-2">
+                <div class="p-2 bg-primary">col 1</div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-2">
+                <div class="p-2 bg-primary">col 2</div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-8">
+                <div class="p-2 bg-primary">col 3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg">
+        <h2>row justify-content-start</h2>
+        <div class="row justify-content-start">
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 1</div>
+            </div>
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 2</div>
+            </div>
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg">
+        <h2>row justify-content-center</h2>
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 1</div>
+            </div>
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 2</div>
+            </div>
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg">
+        <h2>row justify-content-end</h2>
+        <div class="row justify-content-end">
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 1</div>
+            </div>
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 2</div>
+            </div>
+            <div class="col-3">
+                <div class="p-2 bg-primary">col 3</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
