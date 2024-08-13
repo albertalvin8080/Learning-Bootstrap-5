@@ -11,6 +11,45 @@
 
 <body>
 
+    <!-- 
+        `navbar-expand-md` makes the navbar expand when it reaches the md breakpoint
+        and collapse into the navbar-toggler when the viewport is below the md breakpoint.
+    -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-xl">
+            <a href="#" class="navbar-brand">
+                <span class="fw-bold text-secondary">Ergo Sum</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnav"
+                aria-controls="mainnav" aria-expanded="false" aria-label="Toggle Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- `justify-content-end` makes the nav-links go to the far right (when the navbar is expanded). -->
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="mainnav">
+                <!-- `text-end` makes the nav-links text appear at the far right (when the navbar is collapsed). -->
+                <ul class="navbar-nav text-end me-2">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Link 3</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="#" class="nav-link active">Link 4</a>
+                    </li>
+                    <li class="nav-item d-none d-md-inline">
+                        <a href="#" class="btn btn-secondary">Link 4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <section id="intro">
         <div class="container-lg">
             <div class="row justify-content-center align-items-center">
