@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="container-lg py-5 bg-light">
+
+        <div class="row justify-content-center align-items-center g-5">
+            <!-- `text-center` because <span> is not display: block; -->
+            <div class="col-lg-8 text-center">
+                <!-- The class `tt` is arbitrary and does not belong to Bootstrap. -->
+                <span class="tt border border-2 border-dark" data-bs-placement="top" title="Some tip for you">Top</span>
+                <span class="tt border border-2 border-dark" data-bs-placement="bottom"
+                    title="Some tip for you">Bottom</span>
+                <span class="tt border border-2 border-dark" data-bs-placement="left"
+                    title="Some tip for you">Left</span>
+                <span class="tt border border-2 border-dark" data-bs-placement="right"
+                    title="Some tip for you">Right</span>
+            </div>
+            <!-- `text-center` because <span> is not display: block; -->
+            <div class="col-lg-8 text-center">
+                <span class="tt" data-bs-placement="right" title="Lorem ipsum dolor sit amet consectetur adipisicing.">
+                    <img src="assets/rome.png" style="max-width: 400px;" alt="rome" class="img-fluid">
+                </span>
+            </div>
+
+            <div class="col-lg-6">
+                <form action="">
+                    <label for="name" class="form-name">Name</label>
+                    <div class="input-group">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="your name bro">
+                        <span class="input-group-text">
+                            <span class="tt" title="Your name, of course." data-bs-placement="bottom">
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        const tt = document.querySelectorAll(".tt");
+        tt.forEach(t => {
+            new bootstrap.Tooltip(t);
+        });
+        // var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        // var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        //     return new bootstrap.Tooltip(tooltipTriggerEl)
+        // })
+    </script>
+</body>
+
+</html>
