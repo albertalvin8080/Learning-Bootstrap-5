@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <section>
+        <div class="container-lg bg-light py-5">
+            <div class="text-center">
+                <h2>Summa Blasphemia</h2>
+                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <form action="" class="mt-4">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" name="name" id="name" class="form-control mb-4" placeholder="Your Name">
+
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" name="email" id="email" class="form-control mb-4"
+                            placeholder="someone@gmail.com">
+
+                        <label for="country" class="form-label">Country</label>
+                        <select name="country" id="country" class="form-select mb-4">
+                            <option value="CN">Canada</option>
+                            <option value="US">United States</option>
+                            <option value="EN">England</option>
+                        </select>
+
+                        <!-- The label is placed inside the <select> in this `form-floating` one. -->
+                        <div class="form-floating mb-4">
+                            <select class="form-select" name="country" id="country">
+                                <optgroup label="Tsting">
+                                    <option value="CN">Canada</option>
+                                </optgroup>
+                                <option value="US">United States</option>
+                                <option value="EN">England</option>
+                            </select>
+                            <label for="country">Country</label>
+                        </div>
+
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control mb-4" name="description" id="description" style="height: 140px;"></textarea>
+
+                        <div class="form-floating mb-4">
+                            <textarea class="form-control" name="description2" id="description2" style="height: 140px;"></textarea>
+                            <label class="form-label" for="description2">Description</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
