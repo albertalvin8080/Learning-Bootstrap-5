@@ -1,0 +1,37 @@
+/*
+The reason you put these variables BEFORE the @import is due to
+the usage of `!default` sass property for `$primary` and `$light`. 
+This property makes the @import use predefined values before the 
+actual import if they do exist (which is the case).
+- Something like this:
+    $primary:       $blue !default;
+    $secondary:     $gray-600 !default;
+    $success:       $green !default;
+    $info:          $cyan !default;
+    $warning:       $yellow !default;
+    $danger:        $red !default;
+    $light:         $gray-100 !default;
+    $dark:          $gray-900 !default;
+*/
+/* OVERRIDING COLORS */
+$primary: #f2db0c;
+$light: #e3acfa;
+
+/* OVERRIDING COLORS MAP */
+// _functions is needed because _variables uses it.
+// _variables contains the default $theme-colors map.
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+// The sass compiler will iterate through the new map to create classes like `bg-custom1` and `text-custom2`.
+$custom-colors: (
+    "custom1": #18edca,
+    "custom2": #d48453,
+);
+
+// Merging maps and reassigning to $theme-colors.
+$theme-colors: map-merge($custom-colors, $theme-colors);
+
+// This file is a bundle containing every other *.scss of the bootstrap node module.
+// It's necessary so you don't need to import every other file manually.
+@import "../node_modules/bootstrap/scss/bootstrap";
