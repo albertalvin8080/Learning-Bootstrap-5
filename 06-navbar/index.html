@@ -13,7 +13,7 @@
 
     <!-- 
         `navbar-expand-md` makes the navbar expand when it reaches the md breakpoint
-        and collapse into the navbar-toggler when the viewport is below the md breakpoint.
+        and collapse into the `button.navbar-toggler` when the viewport is below the md breakpoint.
     -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-xl">
@@ -44,6 +44,15 @@
                     </li>
                     <li class="nav-item d-none d-md-inline">
                         <a href="#" class="btn btn-secondary">Link 4</a>
+                    </li>
+                    <li class="nav-item dropdown text-center">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            id="btn-dropdown">Dropdown</button>
+                        <ul class="dropdown-menu" aria-labelledby="btn-dropdown">
+                            <li><a href="#" class="dropdown-item">Page 1</a></li>
+                            <li><a href="#" class="dropdown-item">Page 2</a></li>
+                            <li><a href="#" class="dropdown-item">Page 3</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
